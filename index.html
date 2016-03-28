@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Angela Nguyen | Front-End Web Developer</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="stylesheet" href="foundation/css/foundation.css" />
+        <link rel="stylesheet" href="foundation/css/app.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+       
+        <header>
+            <div name="hero" class="hero">
+                <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>   
+                </div>
+
+                    <div class="top-bar" id="main-nav">
+                        <div class="top-bar-right">
+                            <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+                                <li><a class="nav-home" href="#">Home</a></li>
+                                <li><a class="nav-about" href="#about">About</a></li>
+                                <li><a class="nav-projects" href="#projects">Projects</a></li>
+                                <li><a class="nav-contact" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="hero-text">
+                            <h1>Angela Nguyen</h1>
+                            <p>Front-End Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="small-12 columns">
+                        <div class="scroll"><i class="fa fa-chevron-down"></i></div>
+                    </div>               
+                </div>  
+            </div>
+        </header> 
+        
+        <section name="about" class="about">
+            <div class="row">
+                <div class="large-12 columns">
+                    <p class="about-intro">Hi, my name is Angela. </p>
+                    <p class="about-description">I am a mostly self taught front-end web developer from Arlington, Texas. I enjoy creating beautiful websites, learning new technologies, and exploring current web design trends. I'm focused on creating websites that are responsive and written with clean and organized code.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section name="projects" class="projects">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="project row">
+                <div class="medium-6 columns">
+                    <div class="project-1">
+                        <div class="project-description">
+                            <p class="project-title">ATN Piano</p>
+                            <p>ATN Piano is a responsive WordPress website that I designed and developed using the JointsWP Starter Theme. I also designed and created the logo for this website using Illustrator.</p>
+                            <button type="button"><a href="http://atnpiano.com/" target="_blank">View Website</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="medium-6 columns">
+                    <img src="img/project1.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <img src="img/project2.png">
+                </div>
+                <div class="medium-6 columns">
+                    <div class="project-2">
+                        <div class="project-description">
+                            <p class="project-title">My Portfolio</p>
+                            <p>This website was built using the Foundation framework and is fully responsive.</p>
+                            <button type="button"><a href="http://angelatnguyen.github.io/" target="_blank">View Website</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="contact">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Contact</h2>
+                    <p>Feel free to contact me at <span>nguyenmtangela@gmail.com</span></p>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="mailto:nguyenmtangela@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/angelatnguyen" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/angelatnguyen" target="_blank"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <p class="copyright">&copy; Angela Nguyen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="foundation/js/vendor/jquery.min.js"></script>
+        <script src="foundation/js/vendor/what-input.min.js"></script>
+        <script src="foundation/js/foundation.min.js"></script>
+        <script src="foundation/js/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script>
+            $(".scroll").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".about").offset().top}, 800);
+            });
+            
+            $(".nav-home").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".hero").offset().top}, 800);
+            });   
+            
+            $(".nav-about").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".about").offset().top}, 800);
+            });   
+            
+            $(".nav-projects").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".projects").offset().top}, 800);
+            });  
+            
+            $(".nav-contact").click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".contact").offset().top}, 800);
+            });   
+
+        </script>
+    </body>
+</html>
